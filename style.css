@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.title{
+    font-size: 64px;
+    color: rgb(68, 0, 255);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.card {
+    width: 100%;
+    height: 200px;
+    background: #0e0606;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    color: white;
+    font-size: 24px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+.footer {
+    font-size: 32px;
+    color: rgb(255, 0, 140);
+}
+
+
